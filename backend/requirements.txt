@@ -16,3 +16,5 @@ requests==2.31.0
 virtualenv==20.24.5
 virtualenvwrapper-win==1.2.7
 wcwidth==0.2.8
+whitenoise==6.6.0
+wsproto==1.2.0
