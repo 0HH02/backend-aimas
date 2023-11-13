@@ -46,7 +46,10 @@ INSTALLED_APPS = [
     'rest_framework'
 ]
 
-CORS_ALLOWED_ORIGINS = ['https://carlos-mario-chang-jardinez.onrender.com',]
+CORS_ALLOWED_ORIGINS = ['carlos-mario-chang-jardinez.onrender.com']
+RENDER_EXTERNAL_HOSTNAME2 = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME2:
+    CORS_ALLOWED_ORIGINS.append(RENDER_EXTERNAL_HOSTNAME2)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
